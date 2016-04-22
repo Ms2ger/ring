@@ -52,8 +52,6 @@ RING_SRCS = $(addprefix $(RING_PREFIX), \
   crypto/mem.c \
   crypto/modes/gcm.c \
   crypto/poly1305/poly1305.c \
-  crypto/rand/rand.c \
-  crypto/rand/urandom.c \
   crypto/rsa/blinding.c \
   crypto/rsa/padding.c \
   crypto/rsa/rsa.c \
@@ -96,7 +94,6 @@ RING_x86_64_SRCS = $(addprefix $(RING_PREFIX), \
   crypto/ec/p256-x86_64.c \
   crypto/modes/asm/aesni-gcm-x86_64.pl \
   crypto/modes/asm/ghash-x86_64.pl \
-  crypto/rand/asm/rdrand-x86_64.pl \
   crypto/sha/asm/sha256-x86_64.pl \
   crypto/sha/asm/sha512-x86_64.pl \
   $(NULL)) \
